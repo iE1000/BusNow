@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  height: 100vh;
+}
+
+.top-bar {
+  background-color: #041122;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Añadido para centrar las opciones */
+}
+
+.top-bar ul li {
+  margin-right: 20px;
+}
+
+.top-bar ul li:last-child {
+  margin-right: 0;
+}
+
+.top-bar ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.top-bar ul li a:hover {
+  background-color: #e6f99d;
+  color: #041122;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+  z-index: 1;
+}
+
+.menu:hover .menu-dropdown {
+  display: block;
+}
+
+.menu-dropdown select,
+.menu-dropdown input[type="checkbox"] {
+  margin-bottom: 5px;
+}
+
+.dark-mode {
+  background-color: #041122;
+  color: #fff;
+}
+
+.dark-mode .top-bar {
+  background-color: #061d39;
+}
+
+.dark-mode .top-bar ul li a {
+  color: #fff;
+}
+
+.dark-mode .top-bar ul li a:hover {
+  background-color: #0b3c73;
+  color: #fff;
+}
+
+/* Agrega aquí más estilos para los elementos en modo oscuro */
