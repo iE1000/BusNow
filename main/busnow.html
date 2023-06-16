@@ -6,14 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/main/busnow.css">
   <title>BusNow</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" rel="stylesheet" />
 </head>
 
 <body>
   <div class="top-bar">
     <ul>
-      <li><a href="/barrasuperior/tarifas/tarifas.html">Tarifas</a></li>
-      <li><a href="/main/busnow.html"><img src="/imagenes/mapa.png" alt="mapa" width="25" height="30"></a></li>
-      <li><a href="/barrasuperior/horarios/horarios.html">Horarios</a></li>
+      <li><a href="/barrasuperior/tarifas/tarifas.html" id="tariffsLink">Tarifas</a></li>
+      <li><a href="/main/busnow.html" class="active">Mapa<alt="mapa" width="25" height="30" id="mapLink"></a></li>
+      <li><a href="/barrasuperior/horarios/horarios.html" id="schedulesLink">Horarios</a></li>
     </ul>
     <div class="menu">
       <img src="/imagenes/menu.png" alt="Menu" width="30" height="30">
@@ -24,19 +27,18 @@
         </select>
         <label class="switch">
           <input type="checkbox" id="dark-mode-switch">
-          <span class="slider round"></span>
+          <span class="slider round" id="darkModeToggle"></span>
         </label>
-        <a href="/info/nosotros.html">¿BusNow?</a>
+        <span class="dark-mode-label" id="darkModeText">Modo Oscuro</span>
+        <a href="/info/nosotros.html" id="aboutLink">¿BusNow?</a>
       </div>
     </div>
   </div>
 
   <div id="map"></div>
-
-  <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
   <script src="/main/busnow.js"></script>
-  <script src="/idiomas/dark-mode.switch.js"></script>
-  <script src="/idiomas/language-selector.js"></script>
+  <script src="/main/dark-mode.switch.js"></script>
+  <script src="/main/language-selector.js"></script>
 </body>
 
 </html>
