@@ -1,15 +1,58 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>BusNow - ¿BusNow?</title>
-  <link rel="stylesheet" href="/main/busnow.css">
-  <link rel="stylesheet" href="../info/nosotros.css">
-  <script src="/main/busnow.js"></script>
-</head>
-<body>
-  <!-- Contenido de la sección ¿BusNow? -->
+<html lang="es">
 
-  <script src="../idiomas/language-selector.js"></script>
-  <script src="../idiomas/dark-mode.switch.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="nosotros.css">
+  <title>¿BusNow?</title>
+</head>
+
+<body>
+
+  <div class="top-bar">
+      <div class="logo">
+        <img src="/imagenes/bus.png" alt="Logo"  width="100" height="100">
+      </div>
+    <ul>
+      <li><a href="/barrasuperior/tarifas/tarifas.html">Tarifas<alt="tarifas"></a></li>
+      <li><a href="/main/busnow.html" id="mapsLink">Mapa</a></li>
+      <li><a href="/barrasuperior/horarios/horarios.html" id="schedulesLink">Horarios</a></li>
+    </ul>
+    <div class="menu">
+      <img src="/imagenes/menu.png" alt="Menú" width="30" height="30">
+      <div class="menu-dropdown">
+        <select id="language-selector">
+          <option value="es">Español</option>
+          <option value="en">Inglés</option>
+        </select>
+        <label class="switch">
+          <input type="checkbox" id="dark-mode-switch">
+          <span class="slider round" id="darkModeToggle"></span>
+        </label>
+        <span class="dark-mode-label" id="darkModeText">Modo Oscuro</span>
+        <a href="/info/nosotros.html" id="aboutLink">¿BusNow?</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <h1>¿BusNow?</h1>
+    <p>BusNow es una plataforma revolucionaria que brinda seguimiento e información en tiempo real sobre el transporte público. Con nuestra tecnología avanzada y una interfaz fácil de usar, los usuarios pueden acceder fácilmente a información actualizada sobre rutas de autobús, horarios y tiempos estimados de llegada.</p>
+    <p>Nuestro objetivo es mejorar la experiencia de viaje al hacer que el transporte público sea más confiable y conveniente. Ya sea que seas un viajero diario o un viajero ocasional, ¡¿BusNow? te tiene cubierto!</p>
+    <p>Características:</p>
+    <ul>
+      <li>Seguimiento de autobús en tiempo real</li>
+      <li>Predicciones precisas de llegada de autobuses</li>
+      <li>Mapas de rutas y direcciones</li>
+      <li>Alertas y notificaciones de servicio</li>
+      <li>Integración con otros modos de transporte</li>
+    </ul>
+    <p>¡Únete a BusNow hoy y experimenta un nuevo nivel de comodidad en tu viaje diario!</p>
+  </div>
+  <footer>
+    <p>&copy; 2023 BusNow. Todos los derechos reservados.</p>
+  </footer>
 </body>
+
 </html>
