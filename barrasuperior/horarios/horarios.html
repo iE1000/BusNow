@@ -1,16 +1,73 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>BusNow - Horarios</title>
-  <link rel="stylesheet" href="/main/busnow.css">
-  <link rel="stylesheet" href="../horarios/horarios.css">
-  <script src="/main/busnow.js"></script>
-  <script src="../horarios/horarios.js"></script>
-</head>
-<body>
-  <!-- Contenido de la página de horarios -->
+<html lang="es">
 
-  <script src="../main/language-selector.js"></script>
-  <script src="../main/dark-mode-switch.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="horarios.css">
+</head>
+
+<body>
+
+  <div class="top-bar">
+    <div class="logo">
+      <img src="/imagenes/bus.png" alt="Logo"  width="100" height="100">
+    </div>
+    <ul>
+      <li><a href="/barrasuperior/tarifas/tarifas.html" id="tariffsLink">Tarifas</a></li>
+      <li><a href="/main/busnow.html" id="mapsLink">Mapa</a></li>
+      <li><a href="/barrasuperior/horarios/horarios.html" class="active">Horarios</a></li>
+    </ul>
+    <div class="menu">
+      <img src="/imagenes/menu.png" alt="Menu" width="30" height="30">
+      <div class="menu-dropdown">
+        <select id="language-selector">
+          <option value="es">Español</option>
+          <option value="en">English</option>
+        </select>
+        <label class="switch">
+          <input type="checkbox" id="dark-mode-switch">
+          <span class="slider round" id="darkModeToggle"></span>
+        </label>
+        <span class="dark-mode-label" id="darkModeText">Modo Oscuro</span>
+        <a href="/info/nosotros.html" id="aboutLink">¿BusNow?</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <h1>Horarios de Autobuses</h1>
+    <table>
+      <tr>
+        <th>Ruta</th>
+        <th>Lunes a Viernes</th>
+        <th>Sábados</th>
+        <th>Domingos y Festivos</th>
+      </tr>
+      <tr>
+        <td>Ruta 1</td>
+        <td>6:00 - 21:00</td>
+        <td>7:00 - 20:00</td>
+        <td>8:00 - 19:00</td>
+      </tr>
+      <tr>
+        <td>Ruta 2</td>
+        <td>5:30 - 22:30</td>
+        <td>6:30 - 21:30</td>
+        <td>7:30 - 20:30</td>
+      </tr>
+      <tr>
+        <td>Ruta 3</td>
+        <td>6:15 - 20:45</td>
+        <td>7:15 - 19:45</td>
+        <td>8:15 - 18:45</td>
+      </tr>
+    </table>
+    <p>Los horarios están sujetos a cambios. Consulte los horarios actualizados en la parada de autobús.</p>
+  </div>
+  <footer>
+    <p>&copy; 2023 BusNow. Todos los derechos reservados.</p>
+  </footer>
 </body>
+
 </html>
