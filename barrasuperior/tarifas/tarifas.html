@@ -1,16 +1,70 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>BusNow - Tarifas</title>
-  <link rel="stylesheet" href="/main/busnow.css">
-  <link rel="stylesheet" href="../tarifas/tarifas.css">
-  <script src="/main/busnow.js"></script>
-  <script src="../tarifas/tarifas.js"></script>
-</head>
-<body>
-  <!-- Contenido de la página de tarifas -->
+<html lang="es">
 
-  <script src="../main/language-selector.js"></script>
-  <script src="../main/dark-mode-switch.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../tarifas/tarifas.css">
+  <title>Tarifas de Autobuses</title>
+</head>
+
+<body>
+
+  <div class="top-bar">
+      <div class="logo">
+        <img src="/imagenes/bus.png" alt="Logo"  width="100" height="100">
+      </div>
+    <ul>
+      <li><a href="/barrasuperior/tarifas/tarifas.html" class="active">Tarifas<alt="tarifas"></a></li>
+      <li><a href="/main/busnow.html" id="mapsLink">Mapa</a></li>
+      <li><a href="/barrasuperior/horarios/horarios.html" id="schedulesLink">Horarios</a></li>
+    </ul>
+    <div class="menu">
+      <img src="/imagenes/menu.png" alt="Menu" width="30" height="30">
+      <div class="menu-dropdown">
+        <select id="language-selector">
+          <option value="es">Español</option>
+          <option value="en">English</option>
+        </select>
+        <label class="switch">
+          <input type="checkbox" id="dark-mode-switch">
+          <span class="slider round" id="darkModeToggle"></span>
+        </label>
+        <span class="dark-mode-label" id="darkModeText">Modo Oscuro</span>
+        <a href="/info/nosotros.html" id="aboutLink">¿BusNow?</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <h1>Tarifas de Autobuses</h1>
+    <table>
+      <tr>
+        <th>Zona</th>
+        <th>Tarifa Normal</th>
+        <th>Tarifa Reducida</th>
+      </tr>
+      <tr>
+        <td>Zona 1</td>
+        <td>$2.00</td>
+        <td>$1.00</td>
+      </tr>
+      <tr>
+        <td>Zona 2</td>
+        <td>$2.50</td>
+        <td>$1.25</td>
+      </tr>
+      <tr>
+        <td>Zona 3</td>
+        <td>$3.00</td>
+        <td>$1.50</td>
+      </tr>
+    </table>
+    <p>Las tarifas reducidas aplican para niños menores de 12 años, personas mayores de 65 años y personas con discapacidad.</p>
+  </div>
+  <footer>
+    <p>&copy; 2023 BusNow. Todos los derechos reservados.</p>
+  </footer>
 </body>
+
 </html>
